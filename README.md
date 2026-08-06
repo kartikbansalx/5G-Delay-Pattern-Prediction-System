@@ -4,7 +4,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-LSTM-orange?logo=tensorflow)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Research-purple)
-
+## Check out how our model works @ :  [https:forecasting-5g.vercel.app](https://forecasting-5g.vercel.app/)
 > **Forecasting 5G network latency (IP Delay) using machine learning — with a hybrid multi-step recursive LSTM approach for long-term prediction accuracy.**
 
 ---
@@ -82,7 +82,23 @@ The core innovation of this project is a **Hybrid Recursive Forecasting Strategy
 
 ---
 
-## 📈 Results Summary
+##  Results
+Our model achieved the following metrics on the testing dataset:
+
+- **Mean Absolute Error (MAE)**: 15.5 ms  
+- **Root Mean Square Error (RMSE)**: 20.3 ms (on normalization)
+
+| Metric     | Value          |
+|------------|----------------|
+| Threshold  | 20.0 ms        |
+| Accuracy   | 0.9468 (94.68%)|
+| Precision  | 1              |
+| Recall     | 0.7765700      |
+| RMSE       | 0.441362       |
+| R² Score   | 0.9067         |
+| MAE        | 0.20087        |
+
+### 📈 Results Summary
 
 The LSTM-based Hybrid Multi-Step Recursive model outperformed standard RNN, ARIMA, and plain recursive LSTM approaches in long-term forecasting, particularly in:
 
